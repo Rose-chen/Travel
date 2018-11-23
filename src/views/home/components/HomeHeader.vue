@@ -17,7 +17,7 @@
 
 <script>
 export default {
-  name: 'Header'
+  name: 'HomeHeader'
 }
 </script>
 
@@ -34,11 +34,11 @@ export default {
       box-sizing: border-box
     .header-input 
       flex: 1 
-      margin: 0.1rem 0
+      margin: 0.12rem 0
       background: #fff
       border-radius: 0.1rem
       color: #ccc
-      line-height: .66rem
+      line-height: .62rem
       font-size: .28rem
       padding-left: .16rem
     .header-right
