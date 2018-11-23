@@ -13,7 +13,7 @@
 export default {
   name: 'HomeSwiper',
   props: {
-    //list: Array
+    list: Array
   },
   data() {
     return {
@@ -21,29 +21,7 @@ export default {
       	pagination: '.swiper-pagination',
         autoplay: 3000,
       	loop: true
-      },
-      list: [
-        {
-      	  id: '0001',
-      	  imgUrl: 'http://img1.qunarzz.com/piao/fusion/1811/a8/cb43c4ac6c215d02.jpg_750x200_83dee994.jpg'
-        },
-        {
-      	  id: '0002',
-      	  imgUrl: 'http://img1.qunarzz.com/piao/fusion/1811/4d/6706bf772c05ce02.jpg_750x200_773e75f0.jpg'
-        },
-        {
-      	  id: '0003',
-      	  imgUrl: 'http://img1.qunarzz.com/piao/fusion/1811/7c/8e5c4ab8ee8b7402.jpg_750x200_dd7a38dd.jpg'
-        },
-        {
-      	  id: '0004',
-      	  imgUrl: 'http://img1.qunarzz.com/piao/fusion/1809/2d/0d7dc3400a50b502.jpg_750x200_4ca95dd4.jpg'
-        },
-        {
-      	  id: '0005',
-      	  imgUrl: 'http://img1.qunarzz.com/piao/fusion/1710/15/898d6d74e9b06202.jpg_750x200_89b4509e.jpg'
-        }		
-      ]
+      }
     }
   }
 }

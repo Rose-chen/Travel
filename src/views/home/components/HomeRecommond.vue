@@ -23,53 +23,8 @@
 export default {
 	name: 'HomeRecommond',
 	props: {
-      //list: Array
-    },
-	data () {
-		return {
-	        list: [{
-				"id": "0001",
-				"imgUrl": "http://img1.qunarzz.com/sight/p0/1803/12/126471e0966aca5ba3.img.jpg_200x200_f1286016.jpg",
-				"title": "北京国际鲜花港",
-				"comment": 1928,
-				"price": "19.9",
-				"city": "朝阳区",
-				"desc": ""
-			},{
-				"id": "0002",
-				"imgUrl": "http://img1.qunarzz.com/sight/p0/1709/e4/e48857f2ce5e53a7a3.img.jpg_200x200_8ee069fe.jpg",
-				"title": "远去的恐龙",
-				"comment": 430,
-				"price": "140",
-				"city": "顺义区",
-				"desc": "来试试中国最高的弹射过山车吧~"
-			},{
-				"id": "0003",
-				"imgUrl": "http://img1.qunarzz.com/sight/p0/1508/a5/4003f9dd7bebf61eccbf64046e26d487.water.jpg_200x200_7690e4cd.jpg",
-				"title": "远去的恐龙",
-				"comment": 55623,
-				"price": "180",
-				"city": "海淀区",
-				"desc": ""
-			},{
-				"id": "0002",
-				"imgUrl": "http://img1.qunarzz.com/sight/p0/1709/e4/e48857f2ce5e53a7a3.img.jpg_200x200_8ee069fe.jpg",
-				"title": "远去的恐龙",
-				"comment": 430,
-				"price": "140",
-				"city": "顺义区",
-				"desc": "在“海底两万里”鱼你共舞"
-			},{
-				"id": "0003",
-				"imgUrl": "http://img1.qunarzz.com/sight/p0/1508/a5/4003f9dd7bebf61eccbf64046e26d487.water.jpg_200x200_7690e4cd.jpg",
-				"title": "远去的恐龙",
-				"comment": 55623,
-				"price": "180",
-				"city": "海淀区",
-				"desc": ""
-			}]
-		}
-	}
+      list: Array
+    }
 }	
 </script>
 

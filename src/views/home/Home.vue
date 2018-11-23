@@ -1,16 +1,17 @@
 <template>
   <div id="home">
   	<home-header></home-header>
-  	<home-swiper></home-swiper>
-  	<home-icons></home-icons>
+  	<home-swiper :list='swiperList'></home-swiper>
+  	<home-icons :list='iconList'></home-icons>
   	<home-location></home-location>
-	<home-hot></home-hot>
-  	<home-recommond></home-recommond>
-  	<home-weekend></home-weekend>
+	<home-hot :list='hotList'></home-hot>
+  	<home-recommond :list='recommondList'></home-recommond>
+  	<home-weekend :list='weekendList'></home-weekend>
   </div>
 </template>
 
 <script>
+import Axios from 'axios'
 import HomeHeader from './components/HomeHeader'
 import HomeSwiper from './components/HomeSwiper'
 import HomeIcons from './components/HomeIcons'
@@ -28,6 +29,37 @@ export default {
   	HomeHot,
   	HomeRecommond,
   	HomeWeekend
-  }
+  },
+  data () {
+  	return {
+  		swiperList: [],
+  		iconList: [],
+  		hotList: [],
+  		recommondList: [],
+  		weekendList: []
+  	}
+  },
+  methods: {
+  	getHomeData () {
+  		Axios.get('api/home.json')
+  		.then((res) => {
+  			this.setHomeData(res)
+  		})
+  		.catch(e => {
+  			console.log(e)
+  		})
+  	},
+  	setHomeData (res) {
+  		let homeData = res.data.body
+		this.swiperList = homeData.swiperList
+		this.iconList = homeData.iconList
+		this.hotList = homeData.hotList
+		this.recommondList = homeData.recommondList
+		this.weekendList = homeData.weekendList
+  	}
+  },
+  mounted () {
+  	this.getHomeData()
+  } 
 }
 </script>

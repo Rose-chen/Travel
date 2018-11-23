@@ -26,62 +26,8 @@
 export default {
 	name: "HomeHot",
 	props: {
-
-	},
-	data() {
-      return {
-      	list: [
-      		{
-      			id: '00001',
-      			imgUrl: 'http://img1.qunarzz.com/sight/p0/1805/af/af648beb7239c330a3.img.png_150x150_0dd7ede9.png',
-      			title: '武汉花博会',
-      			price: 20
-      		},
-      		{
-      			id: '00002',
-      			imgUrl: 'http://img1.qunarzz.com/sight/p0/1603/b1/b1da46b5326eb99e90.water.jpg_150x150_c2dcbac7.jpg',
-      			title: '武汉花博会',
-      			price: 56
-      		},
-      		{
-      			id: '00003',
-      			imgUrl: 'http://img1.qunarzz.com/sight/p0/1504/47/4730a0c01664b63d.water.jpg_150x150_bb2a2635.jpg',
-      			title: '武汉花博会',
-      			price: 76
-      		},
-      		{
-      			id: '00004',
-      			imgUrl: 'http://img1.qunarzz.com/sight/p0/1501/f8/f8413365ed3e77ab.water.jpg_150x150_995c8ba9.jpg',
-      			title: '武汉花博会',
-      			price: 45
-      		},
-      		{
-      			id: '00005',
-      			imgUrl: 'http://img1.qunarzz.com/sight/p0/1805/af/af648beb7239c330a3.img.png_150x150_0dd7ede9.png',
-      			title: '武汉花博会',
-      			price: 23
-      		},
-      		{
-      			id: '00006',
-      			imgUrl: 'http://img1.qunarzz.com/sight/p0/1504/47/4730a0c01664b63d.water.jpg_150x150_bb2a2635.jpg',
-      			title: '武汉花博会',
-      			price: 73
-      		},
-      		{
-      			id: '00007',
-      			imgUrl: 'http://img1.qunarzz.com/sight/p0/1805/af/af648beb7239c330a3.img.png_150x150_0dd7ede9.png',
-      			title: '武汉花博会',
-      			price: 83
-      		},
-      		{
-      			id: '00008',
-      			imgUrl: 'http://img1.qunarzz.com/sight/p0/1504/47/4730a0c01664b63d.water.jpg_150x150_bb2a2635.jpg',
-      			title: '武汉花博会',
-      			price: 67
-      		}
-      	]
-      }
-    }
+		list: Array
+	}
 }
 </script>
 

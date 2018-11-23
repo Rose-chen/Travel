@@ -1,0 +1,165 @@
+{
+	"code": 0,
+	"body": {
+		"swiperList": [{
+      	  "id": "0001",
+      	  "imgUrl": "http://img1.qunarzz.com/piao/fusion/1811/a8/cb43c4ac6c215d02.jpg_750x200_83dee994.jpg"
+        },{
+      	  "id": "0002",
+      	  "imgUrl": "http://img1.qunarzz.com/piao/fusion/1811/4d/6706bf772c05ce02.jpg_750x200_773e75f0.jpg"
+        },{
+      	  "id": "0003",
+      	  "imgUrl": "http://img1.qunarzz.com/piao/fusion/1811/7c/8e5c4ab8ee8b7402.jpg_750x200_dd7a38dd.jpg"
+        },{
+      	  "id": "0004",
+      	  "imgUrl": "http://img1.qunarzz.com/piao/fusion/1809/2d/0d7dc3400a50b502.jpg_750x200_4ca95dd4.jpg"
+        },{
+      	  "id": "0005",
+      	  "imgUrl": "http://img1.qunarzz.com/piao/fusion/1710/15/898d6d74e9b06202.jpg_750x200_89b4509e.jpg"
+        }],
+        "iconList": [{
+  	      "id": "0001",
+          "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png",
+          "desc": "景点门票"
+  	    },{
+  	      "id": "0002",
+          "imgUrl": "http://img1.qunarzz.com/piao/fusion/1804/ff/fdf170ee89594b02.png",
+          "desc": "武汉必游"
+  	    },{
+  	      "id": "0003",
+          "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/95/8246f27355943202.png",
+          "desc": "游乐场"
+  	    },{
+  	      "id": "0004",
+          "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/20/831d62d2e1c7be02.png",
+          "desc": "滑雪季"
+  	    },{
+  	      "id": "0005",
+          "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/50/26ffa31b56646402.png",
+          "desc": "景点门票"
+  	    },{
+  	      "id": "0006",
+          "imgUrl": "http://img1.qunarzz.com/piao/fusion/1804/5a/13ceb38dcf262f02.png",
+          "desc": "滑雪季"
+  	    },{
+  	      "id": "0007",
+          "imgUrl": "http://img1.qunarzz.com/piao/fusion/1811/1d/c46140e32fffa502.png",
+          "desc": "景点门票"
+  	    },{
+  	      "id": "0008",
+          "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/b1/528a9e80403b8c02.png",
+          "desc": "滑雪季"
+  	    },{
+  	      "id": "0009",
+          "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/50/26ffa31b56646402.png",
+          "desc": "景点门票"
+  	    },{
+  	      "id": "0010",
+          "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/80/416c6ab3368d1f02.png",
+          "desc": "滑雪季"
+  	    }],
+  	    "hotList": [{
+  			"id": "0001",
+  			"imgUrl": "http://img1.qunarzz.com/sight/p0/1805/af/af648beb7239c330a3.img.png_150x150_0dd7ede9.png",
+  			"title": "武汉花博会",
+  			"price": 20
+  		},{
+  			"id": "0002",
+  			"imgUrl": "http://img1.qunarzz.com/sight/p0/1603/b1/b1da46b5326eb99e90.water.jpg_150x150_c2dcbac7.jpg",
+  			"title": "武汉花博会",
+  			"price": 56
+  		},{
+  			"id": "0003",
+  			"imgUrl": "http://img1.qunarzz.com/sight/p0/1504/47/4730a0c01664b63d.water.jpg_150x150_bb2a2635.jpg",
+  			"title": "武汉花博会",
+  			"price": 76
+  		},{
+  			"id": "0004",
+  			"imgUrl": "http://img1.qunarzz.com/sight/p0/1501/f8/f8413365ed3e77ab.water.jpg_150x150_995c8ba9.jpg",
+  			"title": "武汉花博会",
+  			"price": 45
+  		},{
+  			"id": "0005",
+  			"imgUrl": "http://img1.qunarzz.com/sight/p0/1805/af/af648beb7239c330a3.img.png_150x150_0dd7ede9.png",
+  			"title": "武汉花博会",
+  			"price": 23
+  		},{
+  			"id": "0006",
+  			"imgUrl": "http://img1.qunarzz.com/sight/p0/1504/47/4730a0c01664b63d.water.jpg_150x150_bb2a2635.jpg",
+  			"title": "武汉花博会",
+  			"price": 73
+  		},{
+  			"id": "0007",
+  			"imgUrl": "http://img1.qunarzz.com/sight/p0/1805/af/af648beb7239c330a3.img.png_150x150_0dd7ede9.png",
+  			"title": "武汉花博会",
+  			"price": 83
+  		}],
+  		"recommondList": [{
+				"id": "0001",
+				"imgUrl": "http://img1.qunarzz.com/sight/p0/1803/12/126471e0966aca5ba3.img.jpg_200x200_f1286016.jpg",
+				"title": "北京国际鲜花港",
+				"comment": 1928,
+				"price": "19.9",
+				"city": "朝阳区",
+				"desc": ""
+			},{
+				"id": "0002",
+				"imgUrl": "http://img1.qunarzz.com/sight/p0/1709/e4/e48857f2ce5e53a7a3.img.jpg_200x200_8ee069fe.jpg",
+				"title": "远去的恐龙",
+				"comment": 430,
+				"price": "140",
+				"city": "顺义区",
+				"desc": "来试试中国最高的弹射过山车吧~"
+			},{
+				"id": "0003",
+				"imgUrl": "http://img1.qunarzz.com/sight/p0/1508/a5/4003f9dd7bebf61eccbf64046e26d487.water.jpg_200x200_7690e4cd.jpg",
+				"title": "远去的恐龙",
+				"comment": 55623,
+				"price": "180",
+				"city": "海淀区",
+				"desc": ""
+			},{
+				"id": "0002",
+				"imgUrl": "http://img1.qunarzz.com/sight/p0/1709/e4/e48857f2ce5e53a7a3.img.jpg_200x200_8ee069fe.jpg",
+				"title": "远去的恐龙",
+				"comment": 430,
+				"price": "140",
+				"city": "顺义区",
+				"desc": "在“海底两万里”鱼你共舞"
+			},{
+				"id": "0003",
+				"imgUrl": "http://img1.qunarzz.com/sight/p0/1508/a5/4003f9dd7bebf61eccbf64046e26d487.water.jpg_200x200_7690e4cd.jpg",
+				"title": "远去的恐龙",
+				"comment": 55623,
+				"price": "180",
+				"city": "海淀区",
+				"desc": ""
+			}],
+  		"weekendList": [{
+	        "id": "0001",
+	        "imgUrl": "http://img1.qunarzz.com/sight/source/1510/6e/1ea71e2f04e.jpg_r_640x214_aa6f091d.jpg",
+	        "title": "北京温泉排行榜",
+	        "desc": "细数北京温泉，温暖你的冬天"
+	      }, {
+	        "id": "0002",
+	        "imgUrl": "http://img1.qunarzz.com/sight/source/1505/aa/7baaf8a851d221.jpg_r_640x214_1431200f.jpg",
+	        "title": "北京必游TOP10",
+	        "desc": "来北京必去的景点非这些地方莫属"
+	      }, {
+	        "id": "0003",
+	        "imgUrl": "http://img1.qunarzz.com/sight/source/1505/9e/21df651e19af5d.jpg_r_640x214_3ea5bb38.jpg",
+	        "title": "寻找北京的皇城范儿",
+	        "desc": "数百年的宫廷庙宇，至今依旧威严霸气"
+	      }, {
+	        "id": "0004",
+	        "imgUrl": "http://img1.qunarzz.com/sight/source/1505/ce/bc89bc2f0e33ea.jpg_r_640x214_3e408453.jpg",
+	        "title": "学生最爱的博物馆",
+	        "desc": "周末干嘛？北京很多博物馆已经免费开放啦"
+	      }, {
+	        "id": "0005",
+	        "imgUrl": "http://img1.qunarzz.com/sight/source/1505/b2/fde1bfcd057a52.jpg_r_640x214_bbf3fa44.jpg",
+	        "title": "儿童剧场，孩子的乐园",
+	        "desc": "带宝贝观看演出，近距离体验艺术的无穷魅力"
+	      }]
+	}
+}
