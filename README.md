@@ -1,6 +1,8 @@
 # travel
 
-> 基于vue-cli的移动端项目
+> 基于vue-cli + vuex + axios + webpack + ES6 + stylus的移动端项目
+> Home组件:
+> HomeHeader.vue + HomeSwiper.vue + HomeIcons.vue + HomeLocation.vue + HomeHot.vue + HomeRecommond.vue + HomeWeekend.vue
 
 ## Build Setup
 
