@@ -1,6 +1,6 @@
 # travel
 
-**基于vue-cli + vuex + axios + webpack + ES6 + stylus的移动端旅游项目**  
+**基于vue-cli + vuex + vue-router + axios + webpack + ES6 + stylus的移动端旅游项目**  
 
 >**Home组件**:
 
