@@ -1,6 +1,6 @@
 <template>
   <div id="home">
-  	<home-header></home-header>
+  	<home-header :city='city'></home-header>
   	<home-swiper :list='swiperList'></home-swiper>
   	<home-icons :list='iconList'></home-icons>
   	<home-location></home-location>
@@ -32,6 +32,7 @@ export default {
   },
   data () {
   	return {
+  		city: '武汉',
   		swiperList: [],
   		iconList: [],
   		hotList: [],

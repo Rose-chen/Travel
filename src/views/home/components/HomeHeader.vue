@@ -1,4 +1,3 @@
-/* eslint-disable */
 <template>
   <div class="header">
     <div class="header-left">
@@ -8,7 +7,7 @@
 	  <span class="iconfont icon-search">&#xe615;</span>输入城市/景点/游玩主题
 	</div>
 	<div class="header-right">
-	  <router-link to="/city" class="city">北京
+	  <router-link to="/city" class="city">{{city}}
 	    <span class="iconfont icon-arrow">&#xe6aa;</span>
 	  </router-link>
 	</div>
@@ -17,14 +16,18 @@
 
 <script>
 export default {
-  name: 'HomeHeader'
+  name: 'HomeHeader',
+  props: {
+    city: String
+  }
 }
 </script>
 
 <style lang="stylus" scoped>
+  @import '~styles/common.styl'
   .header
     line-height: .86rem
-    background: #1badb6
+    background: $bgColor
     color: #fff
     font-size:.28rem
     display: flex

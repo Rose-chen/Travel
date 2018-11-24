@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <swiper :options="swiperOption">
+    <swiper :options="swiperOption" v-if="showSwiper">
       <swiper-slide v-for="(icons, index) of pages" :key="index">
         <div class="icons">
           <div class="icon" v-for="icon of icons" :key="icon.id">
@@ -41,14 +41,18 @@ export default {
   	  	pages[page].push(this.list[i])
   	  }
   	  return pages
-  	}
+  	},
+    showSwiper () {
+      return this.list.length
+    }
   }
 }	
 </script>
 
 <style lang="stylus" scoped>
+  @import '~styles/common.styl'
 	.wrapper >>>.swiper-pagination-bullet-active
-		background: #1badb6
+		background: $bgColor
 	.wrapper
 		.icons
 			background: #fff
