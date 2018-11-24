@@ -19,6 +19,11 @@
 
 **City.vue**：城市选择父组件
 
+ - CityHeader.vue :
+ - CitySearch.vue :
+ - CityList.vue :
+ - CityAlphabet.vue :
+
 
 >**List组件**:
 
