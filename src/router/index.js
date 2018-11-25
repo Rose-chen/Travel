@@ -26,7 +26,7 @@ export default new Router({
       component: List
     },
     {
-      path: '/default',
+      path: '/detail/:id',
       name: 'Detail',
       component: Detail
     }

@@ -4,7 +4,7 @@
   	<home-swiper :list='swiperList'></home-swiper>
   	<home-icons :list='iconList'></home-icons>
   	<home-location></home-location>
-	<home-hot :list='hotList'></home-hot>
+	  <home-hot :list='hotList'></home-hot>
   	<home-recommond :list='recommondList'></home-recommond>
   	<home-weekend :list='weekendList'></home-weekend>
   </div>

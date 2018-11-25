@@ -4,11 +4,11 @@
 			周末去哪儿
 		</div>
 		<div class="weekendWrapper">
-			<div class="scenicItem" v-for="item in list" :key="item.id">
+			<router-link :to="'/detail/'+item.id" tag="div" class="scenicItem" v-for="item in list" :key="item.id">
 				<img class="imgItem" :src="item.imgUrl" alt="">
 				<div class="scenicTitle">{{item.title}}</div>
 				<div class="scenicDesc">{{item.desc}}</div>
-			</div>
+			</router-link>
 		</div>
 	</div>	
 </template>

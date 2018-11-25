@@ -4,7 +4,7 @@
 			猜你喜欢
 		</div>
 		<div class="itemList">
-			<div class="cityItem" v-for="scenic in list">
+			<router-link :to="'/detail/'+scenic.id" tag="div" class="cityItem" v-for="scenic in list" :key="scenic.id">
 				<img class="cityImg" :src="scenic.imgUrl">
 				<div class="itemContent">
 					<div class="title">{{scenic.title}}</div>
@@ -14,7 +14,7 @@
 					<div v-if="scenic.tips" class="tips">{{scenic.tips}}</div>
 					<div v-if="scenic.desc" class="desc">{{scenic.desc}}</div>
 				</div>
-			</div>
+			</router-link>
 		</div>
 	</div>	
 </template>
