@@ -44,8 +44,10 @@ export default {
   .gallery >>> .swiper-pagination
     color: #fff
   .gallery
+    overflow: hidden
+    padding-bottom: 55%
     .gallery-container
-      position: fixed
+      position: absolute
       top: 0
       left: 0
       right: 0
