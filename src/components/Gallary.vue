@@ -1,24 +1,15 @@
 <template>
-  <div class="gallery" @click="handleGalleryClick">
-    <div class="gallery-container">
-      <img class="gallery-img" src="http://img1.qunarzz.com/sight/p0/1703/a4/a4357d1a8afc001da3.water.jpg_600x330_0f7f8f11.jpg" />
-      <div class="gallery-info">
-        <div class="gallery-text">
-          {{sightName}}
-        </div>
-        <div class="gallery-count">
-          <span class="iconfont icon-search">&#xe615;</span>23
-        </div>
-      </div>
-    </div>
-    <div class="swiper-container" v-if="isShowSwpier">
+  <div class="gallery">
+    <div class="swiper-container" 
+      @click="handleGallaryClick"
+    >
       <div class="swiper-wrapper">
         <swiper :options="swiperOption" >
-          <swiper-slide >
-            <img class="swiper-img" src="http://img1.qunarzz.com/sight/p0/1603/b1/b1da46b5326eb99e90.water.jpg_600x330_1e844ffa.jpg" />
-          </swiper-slide>
-          <swiper-slide >
-            <img class="swiper-img" src="http://img1.qunarzz.com/sight/p0/1810/fb/fbaf55d2dad9aadca3.img.jpg_r_800x800_6590334a.jpg" />
+          <swiper-slide 
+            v-for="(item, index) of gallaryImgs"
+            :key="index"
+          >
+            <img class="swiper-img" :src="item" />
           </swiper-slide>
           <div class="swiper-pagination" slot="pagination"></div>
         </swiper>
@@ -31,8 +22,6 @@
 export default {
   name: 'DetailGallery',
   props: {
-    sightName: String,
-    bannerImg: String,
     gallaryImgs: Array
   },
   data () {
@@ -40,13 +29,16 @@ export default {
       isShowSwpier: false,
       swiperOption: {
         pagination: '.swiper-pagination',
-        paginationType: 'fraction'
+        paginationType: 'fraction',
+        observer:true,
+        observeParents:true,
       }
     }
   },
   methods: {
-    handleGalleryClick () {
-      this.isShowSwpier = true
+    handleGallaryClick () {
+      //this.isShowSwpier = true
+      this.$emit('close')
     }
   }
 }

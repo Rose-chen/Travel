@@ -1,12 +1,18 @@
 <template>
   <div class="detail">
     <detail-header></detail-header>
-    <detail-gallery 
+    <detail-banner 
       :sightName="sightName"
       :bannerImg="bannerImg"
-      :gallaryImgs="gallaryImgs"
+      :gallaryLen="getGallaryLen"
+      @show="handleGallaryShow"
     >
-    </detail-gallery>
+    </detail-banner>
+    <gallary 
+      :gallaryImgs="gallaryImgs" 
+      v-if="isShowSwpier"
+      @close="handleGallaryClose"
+    ></gallary>
     <detail-list></detail-list>
     {{this.$route.params.id}}
   </div>
@@ -14,25 +20,34 @@
 
 <script>
 import DetailHeader from '@/views/detail/components/DetailHeader'
-import DetailGallery from '@/views/detail/components/DetailGallery'
+import DetailBanner from '@/views/detail/components/DetailBanner'
+import Gallary from '@/components/Gallary'
 import DetailList from '@/views/detail/components/DetailList'
 import axios from 'axios'
 export default {
   name: 'Detail',
   components: {
     DetailHeader,
-    DetailGallery,
+    DetailBanner,
+    Gallary,
     DetailList
   },
   data () {
     return {
       sightName: '',
       bannerImg: '',
-      gallaryImgs: []
+      gallaryImgs: [],
+      isShowSwpier: false
     }
   },
   mounted () {
     this.getDetailData()
+  },
+  computed: {
+    getGallaryLen () {
+      console.log(this.gallaryImgs)
+      return this.gallaryImgs.length
+    }
   },
   methods: {
     getDetailData () {
@@ -51,6 +66,12 @@ export default {
         this.bannerImg = detailData.bannerImg
         this.gallaryImgs = detailData.gallaryImgs
       }
+    },
+    handleGallaryShow () {
+      this.isShowSwpier = true
+    },
+    handleGallaryClose () {
+      this.isShowSwpier = false
     }
   }
 }
