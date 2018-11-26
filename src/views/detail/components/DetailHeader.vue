@@ -1,14 +1,14 @@
 <template>
   <div class="header">
-    <router-link to="/" tag="div" class="header-back">
+    <router-link to="/" tag="div" class="header-back" v-show="isShow">
       <span class="iconfont icon-back">&#xe60e;</span>
     </router-link>
-    <div class="header-container">
+    <div class="header-container" v-show="!isShow">
       <router-link to="/" tag="div" class="header-left">
         <span class="iconfont icon-back">&#xe60e;</span>
       </router-link>
       <h2 class="header-title">
-        武汉东湖磨山樱花园风景区
+        {{sightName}}
       </h2>
     </div>
   </div>
@@ -16,7 +16,28 @@
 
 <script>
 export default {
-  name: 'DetailHeader'
+  name: 'DetailHeader',
+  props: {
+    sightName: String
+  },
+  data () {
+    return {
+      isShow: true
+    }
+  },
+  methods: {
+    showHeader () {
+      //console.log(document.documentElement.scrollTop)
+      let top = document.documentElement.scrollTop
+      this.isShow = top === 0?true:false
+    }
+  },
+  activated () {
+    window.addEventListener('scroll', this.showHeader)
+  },
+  deactivated () {
+    window.removeEventListener('scroll', this.showHeader)
+  }
 }
 </script>
 
@@ -24,7 +45,11 @@ export default {
   @import '~styles/common.styl'
   .header
     height: $headerHeight
+<<<<<<< HEAD
     position: relative
+=======
+    position: fixed
+>>>>>>> detail
     z-index: 2
     .header-back
       position: absolute
@@ -63,5 +88,8 @@ export default {
         overflow: hidden
         text-overflow: ellipsis
         white-space: nowrap 
+<<<<<<< HEAD
 
+=======
+>>>>>>> detail
 </style>

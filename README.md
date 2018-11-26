@@ -2,7 +2,7 @@
 
 **基于vue-cli + vuex + vue-router + axios + webpack + ES6 + stylus的移动端旅游项目**  
 
->**Home组件**:
+>**Home组件**: 显示头部，banner轮播，icons显示分类，热门景点列表，推荐景点列表等
 
 **Home.vue**：为父组件，其他的为子组件，使用axios技术请求接口数据(通过mock模拟接口数据)，并使用props向子组件传值
 
@@ -15,14 +15,14 @@
  - HomeWeekend.vue：周末游子组件
 
 
->**City组件(城市选择)**:
+>**City组件(城市选择)**: 显示头部，显示了当前城市，热门城市，以及按照字母分类的城市列表，在搜索框里输入城市名或者拼音，可以滚动到相应的位置，点击城市列表，跳转到首页，同时首页的城市名变化
 
-**City.vue**：城市选择父组件
+**City.vue**：城市选择父组件，其他的为子组件，使用axios技术请求接口数据(通过mock模拟接口数据)，并使用props向子组件传值
 
- - CityHeader.vue :
- - CitySearch.vue :
- - CityList.vue :
- - CityAlphabet.vue :
+ - CityHeader.vue :城市列表头部组件，可以返回上一页
+ - CitySearch.vue :可以输入城市名字或者拼音搜索
+ - CityList.vue :使用了better-scroll插件
+ - CityAlphabet.vue :点击列表右侧的字母，可以滚动到指定的字母位置，也使用了better-scroll插件
 
 
 >**List组件**:
@@ -30,9 +30,19 @@
 **List.vue**：旅游列表父组件
 
  
->**Detail组件**:
+>**Detail组件**: 显示景点的名称，返回信息，景点的主图片，点击主图会显示景点所有图片的画廊组件(公用组件)，还显示了景点的门票等其他信息
 
-**Detail.vue**：旅游详情父组件
+**Detail.vue**：旅游详情父组件，其他的为子组件，Gallary为公用组件，使用axios技术请求接口数据(通过mock模拟接口数据)，并使用props向子组件传值
+
+ - DetailHeader.vue :景点详情头部组件，可以返回上一页
+ - DetailBanner.vue :景点的主图片，点击主图会显示景点所有图片的画廊组件(公用组件)
+ - Gallary.vue ：公用的画廊组件，此处引用
+ - DetailList.vue :用到了组件的递归调用
+
+
+ >**Gallary公用组件**:
+
+ - Gallary.vue ：公用的画廊组件，在详情页和评价页面会调用
 
 
 ## Build Setup

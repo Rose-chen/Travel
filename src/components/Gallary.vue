@@ -37,7 +37,6 @@ export default {
   },
   methods: {
     handleGallaryClick () {
-      //this.isShowSwpier = true
       this.$emit('close')
     }
   }

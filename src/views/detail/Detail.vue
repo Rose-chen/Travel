@@ -1,6 +1,6 @@
 <template>
   <div class="detail">
-    <detail-header></detail-header>
+    <detail-header :sightName="sightName"></detail-header>
     <detail-banner 
       :sightName="sightName"
       :bannerImg="bannerImg"
@@ -13,8 +13,7 @@
       v-if="isShowSwpier"
       @close="handleGallaryClose"
     ></gallary>
-    <detail-list></detail-list>
-    {{this.$route.params.id}}
+    <detail-list :categoryList="categoryList"></detail-list>
   </div>
 </template>
 
@@ -37,6 +36,7 @@ export default {
       sightName: '',
       bannerImg: '',
       gallaryImgs: [],
+      categoryList: [],
       isShowSwpier: false
     }
   },
@@ -45,7 +45,6 @@ export default {
   },
   computed: {
     getGallaryLen () {
-      console.log(this.gallaryImgs)
       return this.gallaryImgs.length
     }
   },
@@ -65,6 +64,7 @@ export default {
         this.sightName = detailData.sightName
         this.bannerImg = detailData.bannerImg
         this.gallaryImgs = detailData.gallaryImgs
+        this.categoryList = detailData.categoryList
       }
     },
     handleGallaryShow () {
