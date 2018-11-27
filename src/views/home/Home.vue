@@ -12,6 +12,7 @@
 
 <script>
 import Axios from 'axios'
+import { mapState } from 'vuex'
 import HomeHeader from './components/HomeHeader'
 import HomeSwiper from './components/HomeSwiper'
 import HomeIcons from './components/HomeIcons'
@@ -36,12 +37,20 @@ export default {
   		iconList: [],
   		hotList: [],
   		recommondList: [],
-  		weekendList: []
+  		weekendList: [],
+      lastCity: ''
   	}
+  },
+  computed: {
+    ...mapState(['city'])
   },
   methods: {
   	getHomeData () {
-  		Axios.get('api/home.json')
+  		Axios.get('/api/home.json', {
+        params: {
+          city: this.city
+        }
+      })
   		.then((res) => {
   			this.setHomeData(res)
   		})
@@ -60,6 +69,13 @@ export default {
   },
   mounted () {
   	this.getHomeData()
-  } 
+    this.lastCity = this.city
+  },
+  activated () {
+    if (this.lastCity !== this.city) {
+      this.getHomeData()
+      this.lastCity = this.city
+    }
+  }
 }
 </script>
