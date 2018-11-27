@@ -45,11 +45,7 @@ export default {
   @import '~styles/common.styl'
   .header
     height: $headerHeight
-<<<<<<< HEAD
-    position: relative
-=======
     position: fixed
->>>>>>> detail
     z-index: 2
     .header-back
       position: absolute
@@ -88,8 +84,4 @@ export default {
         overflow: hidden
         text-overflow: ellipsis
         white-space: nowrap 
-<<<<<<< HEAD
-
-=======
->>>>>>> detail
 </style>
