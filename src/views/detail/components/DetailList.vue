@@ -5,7 +5,7 @@
         <span class="iconfont icon-search">&#xe615;</span>{{item.title}} 
       </div> 
       <div class="childrenList" v-if="item.children">
-        <detail-list v-for="(item, index) of categoryList" :categoryList="item.children" :key="index"></detail-list>
+        <detail-list :categoryList="item.children"></detail-list>
       </div>     
     </div>
   </div>

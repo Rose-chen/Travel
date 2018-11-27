@@ -8,11 +8,13 @@
       @show="handleGallaryShow"
     >
     </detail-banner>
-    <gallary 
+    <fade-animation>
+      <gallary 
       :gallaryImgs="gallaryImgs" 
       v-if="isShowSwpier"
       @close="handleGallaryClose"
     ></gallary>
+    </fade-animation>
     <detail-list :categoryList="categoryList"></detail-list>
   </div>
 </template>
@@ -20,6 +22,7 @@
 <script>
 import DetailHeader from '@/views/detail/components/DetailHeader'
 import DetailBanner from '@/views/detail/components/DetailBanner'
+import FadeAnimation from '@/components/FadeAnimation'
 import Gallary from '@/components/Gallary'
 import DetailList from '@/views/detail/components/DetailList'
 import axios from 'axios'
@@ -29,7 +32,8 @@ export default {
     DetailHeader,
     DetailBanner,
     Gallary,
-    DetailList
+    DetailList,
+    FadeAnimation
   },
   data () {
     return {
@@ -50,13 +54,11 @@ export default {
   },
   methods: {
     getDetailData () {
-      axios.get('/api/detail.json')
-        .then(res => {
-          this.setDetailData(res)}
-          )
-        .catch(e => {
-          console.log(e)
-        })
+      axios.get('/api/detail.json', {
+        params: {
+          id: this.$route.params.id
+        }
+      }).then(this.setDetailData)
     },
     setDetailData (res) {
       if(res.data && res.data.ret) {

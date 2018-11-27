@@ -1,9 +1,12 @@
 <template>
   <div class="header">
-    <router-link to="/" tag="div" class="header-back" v-show="isShow">
+    <router-link to="/" tag="div" class="header-back" v-show="isShowBack">
       <span class="iconfont icon-back">&#xe60e;</span>
     </router-link>
-    <div class="header-container" v-show="!isShow">
+    <div class="header-container" 
+      v-show="!isShowBack"
+      :style="opacityStyle"
+    >
       <router-link to="/" tag="div" class="header-left">
         <span class="iconfont icon-back">&#xe60e;</span>
       </router-link>
@@ -22,20 +25,27 @@ export default {
   },
   data () {
     return {
-      isShow: true
+      isShowBack: true,
+      opacityStyle: {
+        opacity: 0
+      }
     }
   },
   methods: {
     showHeader () {
-      //console.log(document.documentElement.scrollTop)
       let top = document.documentElement.scrollTop
-      this.isShow = top === 0?true:false
+      if (top > 60) {
+        this.opacityStyle.opacity = top/140
+        this.isShowBack = false
+      }else{
+        this.isShowBack = true
+      }
     }
   },
-  activated () {
+  mounted () {
     window.addEventListener('scroll', this.showHeader)
   },
-  deactivated () {
+  beforeDestroy () {
     window.removeEventListener('scroll', this.showHeader)
   }
 }
