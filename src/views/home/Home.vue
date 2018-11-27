@@ -13,7 +13,6 @@
 <script>
 import Axios from 'axios'
 import { mapState } from 'vuex'
-import HomeHeader from './components/HomeHeader'
 import HomeSwiper from './components/HomeSwiper'
 import HomeIcons from './components/HomeIcons'
 import HomeLocation from './components/HomeLocation'
@@ -23,7 +22,7 @@ import HomeWeekend from './components/HomeWeekend'
 export default {
   name: 'Home',
   components: {
-  	HomeHeader,
+  	HomeHeader: () => import('./components/HomeHeader'),
   	HomeSwiper,
   	HomeLocation,
   	HomeIcons,
