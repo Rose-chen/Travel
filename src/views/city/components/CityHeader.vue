@@ -2,7 +2,7 @@
   <header>
     <div class="header-left">
       <router-link to="/">
-        <span class="iconfont icon-back">&#xe60e;</span>
+        <span class="iconfont icon-back"></span>
       </router-link>
     </div>
     城市选择

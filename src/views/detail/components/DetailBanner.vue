@@ -7,7 +7,7 @@
           {{sightName}}
         </div>
         <div class="gallery-count">
-          <span class="iconfont icon-search">&#xe615;</span>{{gallaryLen}}
+          <span class="iconfont icon-search">&#xe617;</span>{{gallaryLen}}
         </div>
       </div>
     </div>
@@ -74,26 +74,12 @@ export default {
           margin-right: .1rem
           width: 1rem
           height: .44rem
+          line-height: .44rem
           color: #fff
           text-align: center
           border-radius: .4rem
-          background: rgba(0, 0, 0, .7)
-    .swiper-container
-      background: #000
-      position: fixed
-      top: 0
-      left: 0
-      right: 0
-      bottom: 0
-      z-index: 3
-      display: flex
-      flex-direction: column
-      justify-content: center
-      .swiper-wrapper
-        width: 100%
-        height: 0
-        padding-bottom: 100%
-        .swiper-img
-          width: 100%
-
+          background: rgba(0, 0, 0, .5)
+          .iconfont
+            font-size: .28rem
+            margin-right: .06rem
 </style>

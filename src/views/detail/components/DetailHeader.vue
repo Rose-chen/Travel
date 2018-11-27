@@ -1,14 +1,14 @@
 <template>
   <div class="header">
     <router-link to="/" tag="div" class="header-back" v-show="isShowBack">
-      <span class="iconfont icon-back">&#xe60e;</span>
+      <span class="iconfont icon-back"></span>
     </router-link>
     <div class="header-container" 
       v-show="!isShowBack"
       :style="opacityStyle"
     >
       <router-link to="/" tag="div" class="header-left">
-        <span class="iconfont icon-back">&#xe60e;</span>
+        <span class="iconfont icon-back"></span>
       </router-link>
       <h2 class="header-title">
         {{sightName}}
