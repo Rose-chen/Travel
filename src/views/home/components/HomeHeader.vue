@@ -7,7 +7,7 @@
   	  <span class="iconfont icon-search">&#xe615;</span>输入城市/景点/游玩主题
   	</div>
   	<div class="header-right">
-  	  <router-link to="/city" class="city">{{city}}
+  	  <router-link to="/city" class="city">{{this.currentCity}}
   	    <span class="iconfont icon-arrow">&#xe6aa;</span>
   	  </router-link>
   	</div>
@@ -15,10 +15,13 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
 export default {
   name: 'HomeHeader',
-  props: {
-    city: String
+  computed: {
+    ...mapState({
+      currentCity: 'city'
+    })
   }
 }
 </script>

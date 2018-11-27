@@ -6,7 +6,7 @@
         <div class="hotCityBox">
           <div class="cityWrapper">
             <div class="locCity">
-              武汉
+              {{this.city}}
             </div>
           </div>
         </div>
@@ -44,6 +44,7 @@
 </template>
 
 <script>
+import { mapState, mapMutations } from 'vuex'
 import BScroll from 'better-scroll'
 export default {
   name: 'CityList',
@@ -52,6 +53,9 @@ export default {
     cities: Object,
     letter: String
   },
+  computed: {
+    ...mapState(['city'])
+  },
   mounted () {
     this.scroll = new BScroll(this.$refs.wrapper)
   },
@@ -59,16 +63,17 @@ export default {
     letter () {
       if(this.letter){
         const element = this.$refs[this.letter][0]
-        console.log(element)
         this.scroll.scrollToElement(element)
       }
     }
   },
   methods: {
-    handelClick (name) {
-      console.log(name)
-      //this.$router.push('/')
-    }
+    handelClick (city) {
+      //this.$store.commit('changeCity', city)
+      this.changeCity(city)
+      this.$router.push('/')
+    },
+    ...mapMutations(['changeCity'])
   }
 }  
 </script>

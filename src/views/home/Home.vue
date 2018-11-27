@@ -1,6 +1,6 @@
 <template>
   <div id="home">
-  	<home-header :city='city'></home-header>
+  	<home-header></home-header>
   	<home-swiper :list='swiperList'></home-swiper>
   	<home-icons :list='iconList'></home-icons>
   	<home-location></home-location>
@@ -32,7 +32,6 @@ export default {
   },
   data () {
   	return {
-  		city: '武汉',
   		swiperList: [],
   		iconList: [],
   		hotList: [],
@@ -52,11 +51,11 @@ export default {
   	},
   	setHomeData (res) {
   		let homeData = res.data.body
-		this.swiperList = homeData.swiperList
-		this.iconList = homeData.iconList
-		this.hotList = homeData.hotList
-		this.recommondList = homeData.recommondList
-		this.weekendList = homeData.weekendList
+  		this.swiperList = homeData.swiperList
+  		this.iconList = homeData.iconList
+  		this.hotList = homeData.hotList
+  		this.recommondList = homeData.recommondList
+  		this.weekendList = homeData.weekendList
   	}
   },
   mounted () {
